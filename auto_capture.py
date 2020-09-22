@@ -1,7 +1,7 @@
 import cv2
 import time
 
-img_path = "D:/fish/" #自己定義要儲存的路徑
+img_path = "./" #自己定義要儲存的路徑
 sleep_time = 60       #自己定義要拍攝的間隔
 
 cap = cv2.VideoCapture(0)        #開啟攝像頭
