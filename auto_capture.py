@@ -18,5 +18,10 @@ while(1):
     name = img_path + str(n) + ".png"
     cv2.imwrite(name, frame)   #儲存路徑
     n += 1
-    
+
+    if cv2.waitKey(1) & 0xFF == ord('q'):   #如果按下q 就截圖儲存並退出
+        cap.release()
+        cv2.destroyAllWindows()
+	break
+
     time.sleep(sleep_time)
